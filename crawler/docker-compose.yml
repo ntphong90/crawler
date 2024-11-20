@@ -4,19 +4,42 @@ services:
   crawler-app:
     image: crawler:latest   # Replace with your actual Docker image name
     build:
-      context: .                  # Path to the Dockerfile, "." means the current directory
-      dockerfile: Dockerfile       # If your Dockerfile is named something other than "Dockerfile", update it
+      context: .                  # Path to Dockerfile, if building locally
+      dockerfile: Dockerfile
     container_name: crawler-app
     ports:
-      - "8080:8080"               # Mapping HTTP port 8080 of the container to the host's 8080
-      - "8081:8081"               # Mapping HTTPS port 8081 of the container to the host's 8081
+      - "8080:8080"
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development   # Set environment variable for Development (can be Production/Production)
-      - ASPNETCORE_HTTP_PORTS=8080            # Specify the port for HTTP (8080)
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
     networks:
-      - crawler-net
-    restart: always   # Optionally restart the container if it crashes
+      - monitoring
+    restart: always
+
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    networks:
+      - monitoring
+    restart: always
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    links:
+      - prometheus
+    networks:
+      - monitoring
+    restart: always
 
 networks:
-  crawler-net:
-    driver: bridge   # This creates a bridge network to link services
+  monitoring:
+    driver: bridge
