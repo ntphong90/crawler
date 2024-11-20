@@ -18,8 +18,10 @@ namespace crawler.Controllers.crawler
         public List<News> ResultList { get; set; }
         public int MaxNum;
         public int DateRange;
+
         private HttpClient _httpClient;
         int count;
+        bool shouldStop;
         public TuoiTreCrawler(HttpClient httpClient = null)
         {
             _httpClient = httpClient ?? new HttpClient(); // Use real HttpClient if not passed
@@ -30,7 +32,21 @@ namespace crawler.Controllers.crawler
             MaxNum = maxNum;
             DateRange = dateRange;
             count = 0;
-            await getNewsFromCategory(1);
+            shouldStop = false;
+            int batchNumber = 0;
+            int maxThreads = 20;
+            while(!shouldStop)
+            {
+                var tasks = new List<Task>();
+                for (int i = 0; i < maxThreads; i++)
+                {
+                    int page = (batchNumber * maxThreads) + i;
+                    tasks.Add(Task.Run(() => getNewsFromCategory(page)));
+                }
+                await Task.WhenAll(tasks);
+                batchNumber++;      
+            }
+           
 
             return ResultList.OrderByDescending(o => o.Vote).ToList();
         }
@@ -70,12 +86,12 @@ namespace crawler.Controllers.crawler
                             } 
                             if(news != null && news.PublicDate < DateTime.Now.AddDays(-DateRange) && news.PublicDate != DateTime.MinValue)
                             {
-                                return;
+                                shouldStop = true;
                             }
                         }
                     }
                 }
-                await getNewsFromCategory(page + 1);
+             
             } catch
             {
             }

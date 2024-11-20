@@ -14,7 +14,7 @@ namespace crawler.Controllers.crawler
         public int MaxNum;
         public int DateRange;
         private HttpClient _httpClient;
-
+        bool shouldStop;
         int count;
         public VNExpressCrawler(HttpClient httpClient = null)
         {
@@ -59,7 +59,21 @@ namespace crawler.Controllers.crawler
                     }
                 }
             }
-            await getNews(latestID);
+            shouldStop = false;
+            int batchNumber = 0;
+            int maxThreads = 30;
+            while (!shouldStop)
+            {
+                var tasks = new List<Task>();
+                for (int i = 0; i < maxThreads; i++)
+                {
+                    int articleID = latestID - ((batchNumber * maxThreads) + i);
+                    tasks.Add(Task.Run(() => getNews(articleID)));
+                }
+                await Task.WhenAll(tasks);
+                batchNumber++;
+            }
+           // await getNews(latestID);
             return ResultList.OrderByDescending(o => o.Vote).ToList();
         }
 
@@ -87,7 +101,7 @@ namespace crawler.Controllers.crawler
 
                         if (news.PublicDate < DateTime.Now.AddDays(-DateRange))
                         {
-                            return;
+                            shouldStop = true;
                         }
                         if (ResultList.Count < MaxNum)
                         {
@@ -105,7 +119,7 @@ namespace crawler.Controllers.crawler
 
                     }
                 }
-                await getNews(id - 1);
+                //await getNews(id - 1);
             } catch (Exception ex) {
 
             }
