@@ -48,6 +48,8 @@ services:
       - '--path.rootfs=/host'
     volumes:
       - /:/host:ro,rslave
+    networks:
+      - monitoring
 
 networks:
   monitoring:
