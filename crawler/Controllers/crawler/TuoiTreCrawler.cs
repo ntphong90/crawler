@@ -91,6 +91,9 @@ namespace crawler.Controllers.crawler
                 //Information
                 res.Title = titleNode?.First().GetDirectInnerText();
                 res.Url = url;
+                var imgNode = htmlDocument.DocumentNode.SelectNodes("//img[@class='lightbox-content']");
+                res.image = imgNode?.First().GetAttributeValue("src","");
+
                 var dateNode = htmlDocument.DocumentNode.SelectNodes("//div[@data-role='publishdate']");
 
                 //date

@@ -63,7 +63,7 @@ namespace crawler.Controllers.crawler
             //using HttpClient client = new HttpClient();
             try
             {
-                string articleData = await _httpClient.GetStringAsync("https://gw.vnexpress.net/ar/get_basic?article_id=" + id + "&data_select=title,lead,short_lead,privacy,share_url,article_type,publish_time");
+                string articleData = await _httpClient.GetStringAsync("https://gw.vnexpress.net/ar/get_basic?article_id=" + id + "&data_select=title,lead,short_lead,privacy,share_url,article_type,publish_time,thumbnail_url");
                 var responseObject = JsonObject.Parse(articleData);
                 var data = JsonObject.Parse(responseObject["data"].ToString());
                 if (data != null && data is JsonArray)
@@ -73,6 +73,7 @@ namespace crawler.Controllers.crawler
                         News news = new News();
                         news.Title = item["title"].GetValue<string>();
                         news.Url = item["share_url"].GetValue<string>();
+                        news.image = item["thumbnail_url"].GetValue<string>();
                         news.ID = id.ToString();
                         news.PublicDate = DateTimeOffset.FromUnixTimeMilliseconds(item["publish_time"].GetValue<long>() * 1000).Date;
                         news.Vote = await getVote(id);

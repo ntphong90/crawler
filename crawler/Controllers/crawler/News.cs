@@ -8,5 +8,7 @@
 
         public string ID { get; set; }
         public DateTime PublicDate { get; set; }
+
+        public string image {  get; set; }
     }
 }
