@@ -61,7 +61,7 @@ namespace crawler.Controllers.crawler
             }
             shouldStop = false;
             int batchNumber = 0;
-            int maxThreads = 30;
+            int maxThreads = 50;
             while (!shouldStop)
             {
                 var tasks = new List<Task>();

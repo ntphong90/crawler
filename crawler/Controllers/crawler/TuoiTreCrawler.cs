@@ -34,7 +34,7 @@ namespace crawler.Controllers.crawler
             count = 0;
             shouldStop = false;
             int batchNumber = 0;
-            int maxThreads = 20;
+            int maxThreads = 40;
             while(!shouldStop)
             {
                 var tasks = new List<Task>();

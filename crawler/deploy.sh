@@ -1,0 +1,2 @@
+docker build -f "Dockerfile" --force-rm -t crawler:latest --label "com.microsoft.created-by=visual-studio" --label "com.microsoft.visual-studio.project-name=crawler" "../../crawler"
+docker-compose up -d
