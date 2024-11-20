@@ -1,0 +1,23 @@
+[
+  {
+    "ContainingType": "crawler.Controllers.CrawlerController",
+    "Method": "Crawl",
+    "RelativePath": "api/ranking",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "url",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "limit",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

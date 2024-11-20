@@ -1,0 +1,215 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ntpho\\source\\repos\\crawler\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF8576C-C4ED-428A-9BFD-C6C00CF2DC6A}|crawler\\crawler.csproj|c:\\users\\ntpho\\source\\repos\\crawler\\crawler\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAF8576C-C4ED-428A-9BFD-C6C00CF2DC6A}|crawler\\crawler.csproj|solutionrelative:crawler\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF8576C-C4ED-428A-9BFD-C6C00CF2DC6A}|crawler\\crawler.csproj|c:\\users\\ntpho\\source\\repos\\crawler\\crawler\\controllers\\crawlercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAF8576C-C4ED-428A-9BFD-C6C00CF2DC6A}|crawler\\crawler.csproj|solutionrelative:crawler\\controllers\\crawlercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF8576C-C4ED-428A-9BFD-C6C00CF2DC6A}|crawler\\crawler.csproj|c:\\users\\ntpho\\source\\repos\\crawler\\crawler\\controllers\\crawler\\vnexpresscrawler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAF8576C-C4ED-428A-9BFD-C6C00CF2DC6A}|crawler\\crawler.csproj|solutionrelative:crawler\\controllers\\crawler\\vnexpresscrawler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF8576C-C4ED-428A-9BFD-C6C00CF2DC6A}|crawler\\crawler.csproj|c:\\users\\ntpho\\source\\repos\\crawler\\crawler\\controllers\\crawler\\tuoitrecrawler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAF8576C-C4ED-428A-9BFD-C6C00CF2DC6A}|crawler\\crawler.csproj|solutionrelative:crawler\\controllers\\crawler\\tuoitrecrawler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF8576C-C4ED-428A-9BFD-C6C00CF2DC6A}|crawler\\crawler.csproj|c:\\users\\ntpho\\source\\repos\\crawler\\crawler\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{CAF8576C-C4ED-428A-9BFD-C6C00CF2DC6A}|crawler\\crawler.csproj|solutionrelative:crawler\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8699FD7D-1762-4D70-9161-B4B200B977BD}|TestProject1\\TestProject1.csproj|c:\\users\\ntpho\\source\\repos\\crawler\\testproject1\\tuoitrecrawlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8699FD7D-1762-4D70-9161-B4B200B977BD}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\tuoitrecrawlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8699FD7D-1762-4D70-9161-B4B200B977BD}|TestProject1\\TestProject1.csproj|c:\\users\\ntpho\\source\\repos\\crawler\\testproject1\\vnexpresscrawlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8699FD7D-1762-4D70-9161-B4B200B977BD}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\vnexpresscrawlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8699FD7D-1762-4D70-9161-B4B200B977BD}|TestProject1\\TestProject1.csproj|c:\\users\\ntpho\\source\\repos\\crawler\\testproject1\\testproject1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8699FD7D-1762-4D70-9161-B4B200B977BD}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\testproject1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF8576C-C4ED-428A-9BFD-C6C00CF2DC6A}|crawler\\crawler.csproj|c:\\users\\ntpho\\source\\repos\\crawler\\crawler\\controllers\\crawler\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAF8576C-C4ED-428A-9BFD-C6C00CF2DC6A}|crawler\\crawler.csproj|solutionrelative:crawler\\controllers\\crawler\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF8576C-C4ED-428A-9BFD-C6C00CF2DC6A}|crawler\\crawler.csproj|c:\\users\\ntpho\\source\\repos\\crawler\\crawler\\controllers\\crawler\\ihtmlcrawler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAF8576C-C4ED-428A-9BFD-C6C00CF2DC6A}|crawler\\crawler.csproj|solutionrelative:crawler\\controllers\\crawler\\ihtmlcrawler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF8576C-C4ED-428A-9BFD-C6C00CF2DC6A}|crawler\\crawler.csproj|c:\\users\\ntpho\\source\\repos\\crawler\\crawler\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CAF8576C-C4ED-428A-9BFD-C6C00CF2DC6A}|crawler\\crawler.csproj|solutionrelative:crawler\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF8576C-C4ED-428A-9BFD-C6C00CF2DC6A}|crawler\\crawler.csproj|c:\\users\\ntpho\\source\\repos\\crawler\\crawler\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CAF8576C-C4ED-428A-9BFD-C6C00CF2DC6A}|crawler\\crawler.csproj|solutionrelative:crawler\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TuoiTreCrawlerTests.cs",
+              "DocumentMoniker": "C:\\Users\\ntpho\\source\\repos\\crawler\\TestProject1\\TuoiTreCrawlerTests.cs",
+              "RelativeDocumentMoniker": "TestProject1\\TuoiTreCrawlerTests.cs",
+              "ToolTip": "C:\\Users\\ntpho\\source\\repos\\crawler\\TestProject1\\TuoiTreCrawlerTests.cs",
+              "RelativeToolTip": "TestProject1\\TuoiTreCrawlerTests.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAIwCkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T09:54:44.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "News.cs",
+              "DocumentMoniker": "C:\\Users\\ntpho\\source\\repos\\crawler\\crawler\\Controllers\\crawler\\News.cs",
+              "RelativeDocumentMoniker": "crawler\\Controllers\\crawler\\News.cs",
+              "ToolTip": "C:\\Users\\ntpho\\source\\repos\\crawler\\crawler\\Controllers\\crawler\\News.cs",
+              "RelativeToolTip": "crawler\\Controllers\\crawler\\News.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T10:42:28.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CrawlerController.cs",
+              "DocumentMoniker": "C:\\Users\\ntpho\\source\\repos\\crawler\\crawler\\Controllers\\CrawlerController.cs",
+              "RelativeDocumentMoniker": "crawler\\Controllers\\CrawlerController.cs",
+              "ToolTip": "C:\\Users\\ntpho\\source\\repos\\crawler\\crawler\\Controllers\\CrawlerController.cs",
+              "RelativeToolTip": "crawler\\Controllers\\CrawlerController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T03:16:27.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ntpho\\source\\repos\\crawler\\crawler\\Program.cs",
+              "RelativeDocumentMoniker": "crawler\\Program.cs",
+              "ToolTip": "C:\\Users\\ntpho\\source\\repos\\crawler\\crawler\\Program.cs",
+              "RelativeToolTip": "crawler\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T03:15:03.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VNExpressCrawler.cs",
+              "DocumentMoniker": "C:\\Users\\ntpho\\source\\repos\\crawler\\crawler\\Controllers\\crawler\\VNExpressCrawler.cs",
+              "RelativeDocumentMoniker": "crawler\\Controllers\\crawler\\VNExpressCrawler.cs",
+              "ToolTip": "C:\\Users\\ntpho\\source\\repos\\crawler\\crawler\\Controllers\\crawler\\VNExpressCrawler.cs",
+              "RelativeToolTip": "crawler\\Controllers\\crawler\\VNExpressCrawler.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAApwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T03:03:07.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TuoiTreCrawler.cs",
+              "DocumentMoniker": "C:\\Users\\ntpho\\source\\repos\\crawler\\crawler\\Controllers\\crawler\\TuoiTreCrawler.cs",
+              "RelativeDocumentMoniker": "crawler\\Controllers\\crawler\\TuoiTreCrawler.cs",
+              "ToolTip": "C:\\Users\\ntpho\\source\\repos\\crawler\\crawler\\Controllers\\crawler\\TuoiTreCrawler.cs",
+              "RelativeToolTip": "crawler\\Controllers\\crawler\\TuoiTreCrawler.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAkwCcAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T03:02:42.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\ntpho\\source\\repos\\crawler\\crawler\\Dockerfile",
+              "RelativeDocumentMoniker": "crawler\\Dockerfile",
+              "ToolTip": "C:\\Users\\ntpho\\source\\repos\\crawler\\crawler\\Dockerfile",
+              "RelativeToolTip": "crawler\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-13T10:02:29.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VNExpressCrawlerTests.cs",
+              "DocumentMoniker": "C:\\Users\\ntpho\\source\\repos\\crawler\\TestProject1\\VNExpressCrawlerTests.cs",
+              "RelativeDocumentMoniker": "TestProject1\\VNExpressCrawlerTests.cs",
+              "ToolTip": "C:\\Users\\ntpho\\source\\repos\\crawler\\TestProject1\\VNExpressCrawlerTests.cs",
+              "RelativeToolTip": "TestProject1\\VNExpressCrawlerTests.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwC8AAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T08:22:23.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\ntpho\\source\\repos\\crawler\\crawler\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "crawler\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\ntpho\\source\\repos\\crawler\\crawler\\Properties\\launchSettings.json",
+              "RelativeToolTip": "crawler\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-19T04:15:34.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TestProject1.csproj",
+              "DocumentMoniker": "C:\\Users\\ntpho\\source\\repos\\crawler\\TestProject1\\TestProject1.csproj",
+              "RelativeDocumentMoniker": "TestProject1\\TestProject1.csproj",
+              "ToolTip": "C:\\Users\\ntpho\\source\\repos\\crawler\\TestProject1\\TestProject1.csproj",
+              "RelativeToolTip": "TestProject1\\TestProject1.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-19T08:40:41.153Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IHtmlCrawler.cs",
+              "DocumentMoniker": "C:\\Users\\ntpho\\source\\repos\\crawler\\crawler\\Controllers\\crawler\\IHtmlCrawler.cs",
+              "RelativeDocumentMoniker": "crawler\\Controllers\\crawler\\IHtmlCrawler.cs",
+              "ToolTip": "C:\\Users\\ntpho\\source\\repos\\crawler\\crawler\\Controllers\\crawler\\IHtmlCrawler.cs",
+              "RelativeToolTip": "crawler\\Controllers\\crawler\\IHtmlCrawler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T03:01:33.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ntpho\\source\\repos\\crawler\\crawler\\appsettings.json",
+              "RelativeDocumentMoniker": "crawler\\appsettings.json",
+              "ToolTip": "C:\\Users\\ntpho\\source\\repos\\crawler\\crawler\\appsettings.json",
+              "RelativeToolTip": "crawler\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-19T04:23:34.374Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
