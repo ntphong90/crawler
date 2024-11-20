@@ -1,4 +1,5 @@
 using crawler.Controllers.crawler;
+using Prometheus;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
@@ -27,7 +28,16 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseRouting(); // Ensure routing is added before MapMetrics.
+app.UseHttpMetrics(); // Middleware to track HTTP request metrics.
+app.UseEndpoints(endpoints =>
+{
+    // Add Prometheus scraping endpoint
+    endpoints.MapMetrics(); // Exposes /metrics endpoint for Prometheus.
 
+    // Other endpoints
+    endpoints.MapControllers(); // If using controllers
+});
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
