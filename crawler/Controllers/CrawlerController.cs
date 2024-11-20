@@ -14,7 +14,7 @@ namespace crawler.Controllers
 
         [HttpGet]
         [Route("/api/ranking")]
-        public async Task<IActionResult> Crawl([FromQuery] string url, [FromQuery] int limit)
+        public async Task<IActionResult> Crawl([FromQuery] string url, [FromQuery] int limit, [FromQuery] int dateRange = 7)
         {
             var crawler = _crawlers.FirstOrDefault(c => url.Contains(c.Domain));
             if (crawler == null)
@@ -26,7 +26,7 @@ namespace crawler.Controllers
                 return NotFound($"Nope :)");
             }
 
-            var result = await crawler.CrawlAsync(url, limit);
+            var result = await crawler.CrawlAsync(url, limit, dateRange);
             return Ok(result);
         }
     }

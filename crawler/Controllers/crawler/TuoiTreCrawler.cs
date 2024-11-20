@@ -17,15 +17,19 @@ namespace crawler.Controllers.crawler
 
         public List<News> ResultList { get; set; }
         public int MaxNum;
+        public int DateRange;
         private HttpClient _httpClient;
+        int count;
         public TuoiTreCrawler(HttpClient httpClient = null)
         {
             _httpClient = httpClient ?? new HttpClient(); // Use real HttpClient if not passed
         }
-        public async Task<List<News>> CrawlAsync(string url, int maxNum)
+        public async Task<List<News>> CrawlAsync(string url, int maxNum, int dateRange)
         {
             ResultList = new List<News>();
             MaxNum = maxNum;
+            DateRange = dateRange;
+            count = 0;
             await getNewsFromCategory(1);
 
             return ResultList.OrderByDescending(o => o.Vote).ToList();
@@ -49,7 +53,7 @@ namespace crawler.Controllers.crawler
                         if (url != "")
                         {
                             News news = await ParseNews(url);
-                            if (news != null && news.PublicDate > DateTime.Now.AddDays(-7))
+                            if (news != null && news.PublicDate > DateTime.Now.AddDays(-DateRange))
                             {
                                if(ResultList.Count < MaxNum)
                                 {
@@ -64,7 +68,7 @@ namespace crawler.Controllers.crawler
                                     }
                                 }
                             } 
-                            if(news != null && news.PublicDate < DateTime.Now.AddDays(-7) && news.PublicDate != DateTime.MinValue)
+                            if(news != null && news.PublicDate < DateTime.Now.AddDays(-DateRange) && news.PublicDate != DateTime.MinValue)
                             {
                                 return;
                             }
@@ -82,6 +86,8 @@ namespace crawler.Controllers.crawler
             try
             {
                 string htmlContent = await _httpClient.GetStringAsync(url);
+                count++;
+                Console.WriteLine(count);
                 var htmlDocument = new HtmlDocument();
                 htmlDocument.LoadHtml(htmlContent);
                 News res = new News();

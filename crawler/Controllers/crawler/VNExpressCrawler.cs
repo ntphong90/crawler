@@ -12,17 +12,22 @@ namespace crawler.Controllers.crawler
 
         public List<News> ResultList { get; set; }
         public int MaxNum;
+        public int DateRange;
         private HttpClient _httpClient;
+
+        int count;
         public VNExpressCrawler(HttpClient httpClient = null)
         {
             _httpClient = httpClient ?? new HttpClient(); // Use real HttpClient if not passed
         }
 
 
-        public async Task<List<News>> CrawlAsync(string url, int maxNum)
+        public async Task<List<News>> CrawlAsync(string url, int maxNum, int dateRange)
         {
             ResultList = new List<News>();
             MaxNum = maxNum;
+            DateRange = dateRange;
+            count = 0;
             //await getNewsFromCategory(1);
             int latestID = 0;
             using (XmlReader reader = XmlReader.Create("https://vnexpress.net/rss/tin-moi-nhat.rss"))
@@ -66,6 +71,8 @@ namespace crawler.Controllers.crawler
                 string articleData = await _httpClient.GetStringAsync("https://gw.vnexpress.net/ar/get_basic?article_id=" + id + "&data_select=title,lead,short_lead,privacy,share_url,article_type,publish_time,thumbnail_url");
                 var responseObject = JsonObject.Parse(articleData);
                 var data = JsonObject.Parse(responseObject["data"].ToString());
+                count++;
+                Console.WriteLine(count);
                 if (data != null && data is JsonArray)
                 {
                     foreach (var item in (JsonArray)data)
@@ -78,7 +85,7 @@ namespace crawler.Controllers.crawler
                         news.PublicDate = DateTimeOffset.FromUnixTimeMilliseconds(item["publish_time"].GetValue<long>() * 1000).Date;
                         news.Vote = await getVote(id);
 
-                        if (news.PublicDate < DateTime.Now.AddDays(-7))
+                        if (news.PublicDate < DateTime.Now.AddDays(-DateRange))
                         {
                             return;
                         }

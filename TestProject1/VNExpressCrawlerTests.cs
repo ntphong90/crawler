@@ -45,7 +45,7 @@ namespace Crawler.Tests
 
             var client = new HttpClient(mockHandler.Object);
             _crawler = new VNExpressCrawler(client); 
-            var result = await _crawler.CrawlAsync("https://vnexpress.net", 5);
+            var result = await _crawler.CrawlAsync("https://vnexpress.net", 5, 7);
 
             Assert.NotNull(result);
             Assert.Equal(1, result.Count); 
