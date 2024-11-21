@@ -30,6 +30,7 @@ if (app.Environment.IsDevelopment())
 }
 app.UseRouting(); // Ensure routing is added before MapMetrics.
 app.UseHttpMetrics(); // Middleware to track HTTP request metrics.
+app.UseMetricServer();
 app.UseEndpoints(endpoints =>
 {
     // Add Prometheus scraping endpoint
